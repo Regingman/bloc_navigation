@@ -62,11 +62,11 @@ class PageA extends StatelessWidget {
       },
       child: Scaffold(
         appBar: AppBar(
-          title: Text('Page A'),
+          title: Text('Page test one'),
         ),
         body: Center(
           child: RaisedButton(
-            child: Text('Go to PageB'),
+            child: Text('Go to Page Test two'),
             onPressed: () {
               BlocProvider.of<MyBloc>(context).add(MyEvent.eventB);
             },
@@ -82,7 +82,7 @@ class PageB extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Page B'),
+        title: Text('Page Test two'),
       ),
       body: Center(
         child: RaisedButton(
