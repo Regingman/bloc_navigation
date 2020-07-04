@@ -1,8 +1,8 @@
+import 'package:bloc_navigation/page/page_four.dart';
 import 'package:bloc_navigation/page/page_one..dart';
+import 'package:bloc_navigation/page/page_three.dart';
 import 'package:bloc_navigation/page/page_two.dart';
 import 'package:flutter/material.dart';
-import 'package:meta/meta.dart';
-import 'package:bloc/bloc.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 
 import 'bloc/my_bloc.dart';
@@ -23,6 +23,8 @@ class MyApp extends StatelessWidget {
       routes: {
         '/': (context) => PageOne(),
         '/pageTwo': (context) => PageTwo(),
+        '/pageThree': (context) => PageThree(),
+        '/pageFour': (context) => PageFour(),
       },
       initialRoute: '/',
     );

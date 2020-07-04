@@ -1,1 +1,1 @@
-enum MyEvent { eventOne, eventTwo }
+enum MyEvent { eventOne, eventTwo, eventThree, eventFour }

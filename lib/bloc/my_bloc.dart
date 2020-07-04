@@ -1,7 +1,9 @@
 import 'package:bloc/bloc.dart';
 import 'package:bloc_navigation/event/my_event.dart';
 import 'package:bloc_navigation/state/my_state.dart';
+import 'package:bloc_navigation/state/state_four.dart';
 import 'package:bloc_navigation/state/state_one.dart';
+import 'package:bloc_navigation/state/state_three.dart';
 import 'package:bloc_navigation/state/state_two.dart';
 
 class MyBloc extends Bloc<MyEvent, MyState> {
@@ -16,6 +18,12 @@ class MyBloc extends Bloc<MyEvent, MyState> {
         break;
       case MyEvent.eventTwo:
         yield StateTwo();
+        break;
+      case MyEvent.eventThree:
+        yield StateThree();
+        break;
+      case MyEvent.eventFour:
+        yield StateFour();
         break;
     }
   }
